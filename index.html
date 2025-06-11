@@ -1,99 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css" />
         <title>BuyList - Nazarii Korotun</title>
     </head>
     <body>
-        <div id="main-page" class="main">
-            <div id="content" class="content">
-                <div id="table-background" class="table-background">
-                    <div id="table-main" class="table-main">
-                        <div>
-                            <div class="table-searchbar-wrapper">
-                                <label>
-                                    <input type="text" placeholder="Назва товару">
-                                </label>
-                                <button data-tooltip="Tooltip">Додати</button>
-                            </div>
-                        </div>
-                        <div class="table-products">
-                            <div>
-                                <p style="color: gray">
-                                    <s>Помідори</s>
-                                </p>
-                            </div>
-                            <div class="tp-addbuttons">
-                                <div>2</div>
-                            </div>
-                            <div class="tp-removebuttons">
-                                <button data-tooltip="Tooltip">Не куплено</button>
-                            </div>
-                        </div>
-                        <div class="table-products">
-                            <div>
-                                <p>Печиво</p>
-                            </div>
-                            <div class="tp-addbuttons">
-                                <button data-tooltip="Tooltip">-</button>
-                                <div>2</div>
-                                <button data-tooltip="Tooltip">+</button>
-                            </div>
-                            <div class="tp-removebuttons">
-                                <button data-tooltip="Tooltip">Куплено</button>
-                                <button data-tooltip="Tooltip">x</button>
-                            </div>
-                        </div>
-                        <div class="table-products">
-                            <div style="">
-                                <label>
-                                    <input type="text" placeholder="Сир" style="width: 50px; border: none; background: transparent">
-                                </label>
-                            </div>
-                            <div class="tp-addbuttons">
-                                <button data-tooltip="Tooltip">-</button>
-                                <div>1</div>
-                                <button data-tooltip="Tooltip">+</button>
-                            </div>
-                            <div class="tp-removebuttons">
-                                <button data-tooltip="Tooltip">Куплено</button>
-                                <button data-tooltip="Tooltip">x</button>
-                            </div>
-                        </div>
+        <div class="main">
+            <div class="content">
+                <div class="table-background">
+                    <div class="table-main">
+
                     </div>
-                    <div id="table-secondary" class="table-secondary">
-                        <div style="display: flex; align-items: center; justify-content: left; padding-left: 20px; font-size: 1.5rem; border-top-right-radius: 8px; border-top-left-radius: 8px;">
+                    <div class="table-secondary">
+                        <div class="secondary-title">
                             <p><b>Залишилося</b></p>
                         </div>
                         <div class="secondary-products">
-                            <div class="secondary-info">
-                                <p>Печиво</p>
-                                <div>2</div>
-                            </div>
-                            <div class="secondary-info">
-                                <p>Сир</p>
-                                <div>1</div>
-                            </div>
+
                         </div>
-                        <div style="display: flex; align-items: center; justify-content: left; padding-left: 20px; font-size: 1.5rem">
+                        <div class="secondary-title">
                             <p><b>Куплено</b></p>
                         </div>
-                        <div class="secondary-products" style="border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
-                            <div class="secondary-info">
-                                <p><s>Помідори</s></p>
-                                <div>2</div>
-                            </div>
+                        <div class="secondary-products">
+
                         </div>
                     </div>
                 </div>
                 <div class="badge">
                     <p class="badge-buylist">Buy List</p>
                     <p class="badge-createdby">Created by:</p>
-                    <p style="font-size: 1.2rem;margin-top: 0; margin-left: 10px">Nazarii Korotun</p>
+                    <p style="font-size: 1.2rem; margin-top: 0; margin-left: 10px">Nazarii Korotun</p>
                 </div>
             </div>
         </div>
+        <script src="../dist/buylist.js"></script>
     </body>
 </html>

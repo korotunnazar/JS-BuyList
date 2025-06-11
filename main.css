@@ -195,7 +195,7 @@ button[data-tooltip]:hover::after {
 }
 
 .table-searchbar-wrapper button {
-    height: 100%;
+    height: inherit;
     width: clamp(5rem, 30%, 7.5rem);
     background: #007bff;
     border-bottom: 3px solid #0056b3;
@@ -220,6 +220,12 @@ button[data-tooltip]:hover::after {
     gap: 0.625rem;
 }
 
+.table-products input {
+    width: 50px;
+    border: none;
+    background: transparent;
+}
+
 .table-products > div {
     flex-basis: 30%;
     padding: 0.3rem 0 0.3rem 0.5rem;
@@ -229,6 +235,9 @@ button[data-tooltip]:hover::after {
 .table-products p {
     font-size: 1.1rem;
     margin: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .table-products input[type="text"] {
@@ -369,6 +378,9 @@ button[data-tooltip]:hover::after {
     border: none;
     padding-bottom: 0.3125rem;
     padding-top: 0.625rem;
+
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .table-secondary p b {
